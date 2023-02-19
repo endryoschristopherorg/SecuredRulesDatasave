@@ -6,28 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Secured Link Acess Example</title>
         <script>
-            setTimeout(function () {
-                var a = "https://example.com",
-                    // Change the above variable with the address or a piece it contains, for better security hide or encrypt this variable. DO NOT MESS WITH THE CODE BELOW!!
-                    b = "block",
-                    c = "https://raw.githubusercontent.com/endryoschristopherorg/SecuredRulesDatasave/main/Versions",
-                    d = new XMLHttpRequest();
-                d["open"]("GET", c),
-                    (d["responseType"] = "json"),
-                    d["send"](),
-                    (d["onload"] = function () {
-                        var e = d["response"];
-                        if (e["NameProject"] == "PPT\x20Secured" && e["Year"] == "2016" && e["ApiKey"] == "PPT-73b3d-98d7-45fb-9746-9b7ffc098992")
-                            return window["location"]["href"]["match"](a)
-                                ? (localStorage["clear"]("PPTSecuredErrorKey1"), !![])
-                                : (b == "block" &&
-                                      (localStorage["setItem"]("PPTSecuredErrorKey1", !![]),
-                                      (document["body"]["innerHTML"] = "Error\x20102"),
-                                      alert("As\x20the\x20url\x20located\x20does\x20not\x20comply\x20with\x20the\x20parameters\x20pre-added\x20to\x20the\x20configuration.")),
-                                  ![]);
-                        else alert("The\x20security\x20file\x20is\x20no\x20longer\x20valid,\x20update\x20with\x20the\x20vendor.");
-                    });
-            }, 0x1f4);
+       var e = "https://example.com",
+ // Change the above variable with the address or a piece it contains, for better security hide or encrypt this variable. DO NOT MESS WITH THE CODE BELOW!!
+    w = "https://raw.githubusercontent.com/endryoschristopherorg/SecuredRulesDatasave/main/Versions",
+    i = new XMLHttpRequest();
+i["open"]("GET", w),
+    (i["responseType"] = "json"),
+    i["send"](),
+    (i["onload"] = function () {
+        var z = i["response"];
+        if (z["NameProject"] == "PPT\x20Secured" && z["Year"] == "2016" && z["ApiKey"] == "PPT-73b3d-98d7-45fb-9746-9b7ffc098992") {
+            if (window["location"]["href"]["match"](e)) return !![];
+            else
+                localStorage["setItem"]("PPTSecuredErrorKey1", !![]),
+                    (document["body"]["innerHTML"] = "Error\x20102"),
+                    alert("As\x20the\x20url\x20located\x20does\x20not\x20comply\x20with\x20the\x20parameters\x20pre-added\x20to\x20the\x20configuration.");
+            return ![];
+        } else alert("The\x20security\x20file\x20is\x20no\x20longer\x20valid,\x20update\x20with\x20the\x20vendor.");
+    });
         </script>
     </head>
     <body>
